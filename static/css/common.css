@@ -1,0 +1,159 @@
+body{
+	text-align:center;
+	background:#DDD;
+
+}
+
+div.wrap{
+			min-width:1200px;
+			width:1200px;
+			margin:0 auto;
+			border-right:1px solid #CCC;
+			border-left:1px solid #CCC;
+			background:white;
+			padding:0px;
+			text-align:center;
+			height: 900px;
+			
+			
+					}
+		div.name {
+			height:100px;
+			line-height:100px;
+			border:1px solid white; 
+			background:black;	
+			font-size:70px;
+			font-weight:900;
+			color:white;
+
+    		}
+    
+		div.name p.nameconf {
+			
+			margin-left:auto;
+			margin-right:auto;
+			top:-9%;
+			font-size:70px;
+			font-weight:900;
+			color:#000000;
+			height:90px;
+		}
+.box{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 20px;
+	width:150px;
+	height:80px;
+	font-size:25px;
+	line-height:80px;
+}
+.one_level {
+	background-color:#FFFFCC;
+}
+.two_level {
+	font-style: italic;
+}
+.three_level{
+	color:red;
+}
+
+		#menu{
+			float:left;
+			width:100%;
+			padding:0;
+			list-style-type:none;
+		}
+		li.medu1:hover {background-color:#99FFFF;}
+		li.medu1 {display:inline;
+		   float: left;
+			width:7em;
+			text-decoration:none;
+			color:#000000;
+			font-size:20px;
+			font-weight:900;
+			background:#00CCCC;	
+			padding:0.2em 0.6em;
+			border-right:1px solid white;
+		}
+		
+		#menu_ro{
+			float:left;
+			width:100%;
+			padding:0;
+			list-style-type:none;
+		}
+
+		li.medu1_ro:hover {background-color:#FFCCCC;}
+		li.medu1_ro {display:inline;
+		   float: left;
+			width:7em;
+			text-decoration:none;
+			color:#000000;
+			font-size:20px;
+			font-weight:900;
+			background:#FF6666;	
+			padding:0.2em 0.6em;
+			border-right:1px solid white;
+		}
+		
+		#menu_ex{
+			float:left;
+			width:100%;
+			padding:0;
+			list-style-type:none;
+		}
+
+		li.medu1_ex:hover {background-color:#99FFFF;}
+		li.medu1_ex {display:inline;
+		   float: left;
+			width:7em;
+			text-decoration:none;
+			color:#000000;
+			font-size:20px;
+			font-weight:900;
+			background:#00CCCC;	
+			padding:0.2em 0.6em;
+			border-right:1px solid white;
+		}
+		td.choose_list:hover {color:red;}
+		td.choose_list {cursor:pointer;}
+		#menu_svn{
+			float:left;
+			width:100%;
+			padding:0;
+			list-style-type:none;
+		}
+
+		li.medu1_svn:hover {background-color:#CC66CC;}
+		li.medu1_svn {display:inline;
+		   float: left;
+			width:7em;
+			text-decoration:none;
+			color:#000000;
+			font-size:20px;
+			font-weight:900;
+			background:#9966FF;	
+			padding:0.2em 0.6em;
+			border-right:1px solid white;
+		}		
+
+		tr.oneline{
+			background-color:#FFFFCC;
+		}
+		tr.svn_oneline{
+			background-color:#CCCCFF;
+		}
+		tr.svn_twoline{
+			background-color:#CC99FF;
+		}
+		tr.twoline{
+			background-color:#CCFFFF;
+		}
+		
+		.checking{
+			color:red;
+		}
+		.modefying{
+			color:red;
+		}
+		

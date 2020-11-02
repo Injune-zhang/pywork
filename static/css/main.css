@@ -1,0 +1,29 @@
+/*
+	Background Stretcher jQuery Plugin 
+	� 2009 ajaxBlender.com
+*/
+
+BODY {
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 12px;
+    background: #FFFFFF;
+}
+A { color: #0A8ECC; }
+A:HOVER {
+	text-decoration: none;
+	color: #8FCB2F;
+}	
+H1 {
+	font-weight: normal;
+	color: #0A8ECC;
+	margin: 0;
+	padding: 0;
+}
+.clear {
+	font-size: 0;
+	line-height: 0;
+	height: 1px;
+	width: 100%;
+	clear: both;
+}

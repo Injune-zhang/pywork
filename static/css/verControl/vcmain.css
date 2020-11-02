@@ -1,0 +1,290 @@
+.preload
+{
+}
+body{
+width:1200px;padding:0px; margin:auto;
+font-size:14px;
+color:Black;
+background:transparent;
+font-family:"微软雅黑";
+background:url(/static/img/bgTop.jpg) #eef1fa repeat-x;
+
+}
+a img
+{
+	border:0px solid white;	
+}
+.mainBody
+{
+	min-height:400px;
+	width:100%;
+}
+a
+{
+	text-decoration:none;
+	color:Black;
+}
+a:hover
+{
+	text-decoration:none;
+	color:Black;
+	cursor:pointer;
+}
+a:visited
+{
+	text-decoration:none;
+	color:Black;
+}
+/***INPUT AREA START**/
+input[type="text"][class="normal"],input[type="password"][class="normal"],textarea[class="normal"],input[type="file"][class="normal"]
+{
+	width:200px;
+	border:1px solid #88d3c0;
+}
+input[type="text"][class="normal"]:hover,input[type="password"][class="normal"]:hover,textarea[class="normal"]:hover
+{
+	border:1px solid #33d3a0;
+	background-color:#d2e6fa
+}
+input[type="text"][class="normal"]:focus,input[type="password"][class="normal"]:focus,textarea[class="normal"]:focus
+{
+	border:1px solid #a0e843;
+	background-color:#e1ffb9
+}
+input[type="button"],input[type="submit"],input[type="reset"]
+{
+	cursor:pointer;
+    margin-left: 18px;
+}
+input[type="button"][class="blue"],input[type="submit"][class="blue"],input[type="reset"][class="blue"]
+{
+background:transparent url(button.gif) no-repeat;
+padding-right:15px;
+padding-top:3px;
+border:0px;
+width:94px;
+height:20px;
+color:White;
+font-weight:bold
+}
+input[type="button"][class="normal"],input[type="submit"][class="normal"],input[type="reset"][class="normal"]
+{
+padding:2px 10px 4px 10px;
+background:url(button_normal.gif) repeat-x;
+border:1px solid #aae4d1;
+color:black;
+height:22px;
+font-family:"微软雅黑";
+font-size:11px;
+}
+input[type="button"][class="normal"]:hover,input[type="submit"][class="normal"]:hover,input[type="reset"][class="normal"]:hover
+{
+background:url(button_normal.gif) repeat-x;
+border:1px solid #43e4d1;
+color:black;
+height:22px;
+font-family:"微软雅黑";
+font-size:11px;
+}
+/***INPUT AREA END**/
+.foot
+{
+margin-top:1px;
+padding:1px;
+border-top:1px solid #3d97e0;
+text-align:right;
+color:#333333;
+font-size:12px;
+float:right;
+width:100%
+}
+.foot a 
+{
+color:#333333;
+text-decoration:none
+}
+.foot a:hover 
+{
+color:#ffffff;
+background-color:#333333;
+text-decoration:none
+}
+.foot a:active 
+{
+color:#ffffff;
+background-color:#333333;
+text-decoration:none
+}
+.foot a:visited
+{
+color:#333333;
+text-decoration:none
+}
+/**WRAP AREA START**/
+.wrap1
+{
+ padding:0px 3px 3px 0px; 
+ margin:2px 10px 0px 0px;
+ background:url(shadow.png) right bottom;
+ float:left;
+}
+.more
+{
+padding-right:20px;
+display:inline;
+float:right;
+}
+.wrap1 .content
+{
+ border:1px solid #0f7833;
+ border-top:0px;
+ padding:10px 20px 10px 10px;
+ background-color:#cedeee;
+}
+.content ul
+{
+padding:0px;
+margin:0px;	
+}
+/**List start*/
+.content ul li
+{
+ list-style-type:none;
+ padding:5px 5px 4px 4px;
+ width:100%;
+ background-color:#cedeee;
+ text-align:left;
+ text-decoration:none;
+ border:1px solid transparent;
+}
+ .content ul li:hover, .content ul .li2
+{
+  border:1px solid #2999ff;
+  list-style-type:none;
+  background-color:#cedeee;
+  background-color:White;
+  background-image:url(item_Bg_hover.gif);
+  background-repeat:repeat-x;
+}
+/**
+每个应用（日志、相册、视频）的首项目说明*/
+.first
+{
+	text-indent:14px;
+}
+
+/**List End*/
+.head1
+{
+ border:1px solid #0f7833;
+ border-bottom:0px;
+ background:url(wrap1_head.gif) repeat-x;
+ height:26px;
+ font-size:14px;
+ padding-left:10px;
+ padding-top:4px;
+ cursor:default;
+}
+
+.wrap2,.wrap1:hover
+{
+ padding:0px 3px 3px 0px;
+ margin-right:10px;
+ background:url(shadow.png) right bottom;
+ float:left;
+}
+.wrap2 .content, .wrap1:hover .content
+{
+ border:1px solid #16538c;
+ border-top:0px;
+ padding:10px 20px 10px 10px;
+ background-color:#cedeee;
+}
+.head2, .wrap1:hover .head1
+{
+ color:White;
+ border:1px solid #16538c;
+ border-bottom:0px;
+ background:url(wrap2_head.gif) repeat-x;
+ height:26px;
+ font-size:14px;
+ padding-left:10px;
+ padding-top:4px;
+}
+/**WRAP AREA END**/
+/**Style Table*/
+.table1 {
+  text-align:center;
+  border-collapse: collapse;
+  border: 1px solid #666;
+  padding:0px;
+}
+col {
+  border-right: 1px solid #666;
+  border-collapse:collapse;
+}
+.table1 td{
+  text-align:center;
+  
+}
+ 
+.table1 th {
+  font-weight: normal;
+  text-align: center;
+  background: #ccc url(table_bar.gif) repeat-x left center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+  color:black
+}
+ 
+.table1 th, .table1 tbody td {
+  padding: 0.1em 1em;
+}
+ 
+ .table1 tbody tr:hover {
+  background-color:#3d80df;
+  color: #fff;
+}
+ 
+ .table1 thead tr:hover {
+  background-color: transparent;
+  color: inherit;
+}
+.imgBtn
+{
+	border:1px solid transparent; 
+}
+.imgBtn:hover
+{
+	background:url(item_bg_hover.gif) repeat-x top;
+}
+.imgBtn:active
+{
+  background:url(item_bg_hover.gif) repeat-x bottom;	
+}
+/**Notify Part**/
+#newsNotify tr td
+{
+	position:relative;
+}
+#newsNotify tr td div
+{
+	display:none;
+	border:1px solid #00b89d;
+	padding:20px;
+	background:#cceeff;
+	width:200px;
+}
+#newsNotify tr td:hover div
+{
+	display:block;
+	position:absolute;
+	top:-40px;
+	left:20px;
+	z-index:1100;
+}
+#newsNotify tr td:hover
+{
+	z-index:1000;
+}
+/**End Style*/

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页app2</title>
+</head>
+<body>
+<ul>
+    <li>今天app2</li>
+    <li>天气app2</li>
+    <li>真的app2</li>
+    <li>不错app2</li>
+</ul>
+<div style="position:absolute; height:400px; overflow-y:auto">
+    <form class="form-search" action="/app2/commit/"  accept-charset="UTF-8" method="post" onsubmit="return validate_commit_form({{result.0}})"><div class="modal-body" style="overflow:auto">
+        <table>
+            <tr>
+                <td colspan="3">
+                    主题：<input name="title{{result.0}}" id="title{{result.0}}" value="{{result.5}}">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <textarea readonly="true" style="width:700px;height:150px;">{{result.7}}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>负责策划：
+                    <select name="chname{{result.0}}" id="chname{{result.0}}">
+                        <option value="null" {%ifequal result.3 "null" %}selected="selected"{%endifequal%}>无</option>
+                        {%for item in userlist%}
+                        {%ifequal item.0 "C_策划" %}
+                        {%for user in item.1%}
+                        <option value="{{user.0}}" {%ifequal result.3 user.0 %}selected="selected"
+                                {%endifequal%}>{{user.0}}
+                        </option>
+                        >
+                        {%endfor%}
+                        {%endifequal%}
+                        {%endfor%}
+                    </select>
+                </td>
+                <td>负责程序：
+                    <select name="cxname{{result.0}}" id="cxname{{result.0}}">
+                        <option value="null" {%ifequal result.2 "null"%}selected="selected"{%endifequal%}>无</option>
+                        {%for item in userlist%}
+                        {%ifequal item.0 "C_程序" %}
+                        {%for user in item.1%}
+                        <option value="{{user.0}}" {%ifequal result.2 user.0 %}selected="selected"
+                                {%endifequal%}>{{user.0}}
+                        </option>
+                        >
+                        {%endfor%}
+                        {%endifequal%}
+                        {%endfor%}
+                    </select>
+                </td>
+                <td>负责QA：
+                    <select name="qaname{{result.0}}" id="qaname{{result.0}}">
+                        <option value="null" {%ifequal result.1 "null"%}selected="selected"{%endifequal%}>无</option>
+                        {%for item in userlist%}
+                        {%ifequal item.0 "QA" %}
+                        {%for user in item.1%}
+                        <option value="{{user.0}}" {%ifequal result.1 user.0 %} selected="selected" {%endifequal%}>
+                            {{user.0}}
+                        </option>
+                        >
+                        {%endfor%}
+                        {%endifequal%}
+                        {%endfor%}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>类型：<select name="rltype{{result.0}}" id="rltype{{result.0}}">
+                    {%for item in reloadtype%}
+                    <option value="{{item.0}}" {%ifequal result.4 item.0 %}selected="selected" {%endifequal%}>
+                        {{item.0}}
+                    </option>
+                    {%endfor%}}
+                </select></td>
+                <td>QA规避难易度：<select name="difficulttype" id="difficulttype{{result.0}}">
+                    <option value="易" {%ifequal result.8 "易" %}selected="selected" {%endifequal%}>易</option>
+                    <option value="难" {%ifequal result.8 "难" %}selected="selected" {%endifequal%}>难</option>
+                    <option value="较难" {%ifequal result.8 "较难" %}selected="selected" {%endifequal%}>较难</option>
+                </select></td>
+                <td>是否发放补偿：<select name="isbuchang" id="isbuchang{{result.0}}">
+                    <option value="0" {%ifequal result.9 0 %}selected="selected" {%endifequal%}>否</option>
+                    <option value="1" {%ifequal result.9 1 %}selected="selected" {%endifequal%}>是</option>
+                </select></td>
+
+                <!-- <td>是否外网遗漏：<select name="isyl{{result.0}}" id="isyl{{result.0}}">
+                {%ifnotequal loginname "X_夏奎"%}
+                {%ifequal result.9 0 %}<option value="0">否</option>{%endifequal%}
+                {%ifequal result.9 1 %}<option value="1">是</option>{%endifequal%}
+                {%endifnotequal%}
+                {%ifequal loginname "X_夏奎"%}
+                <option value="0" {%ifequal result.9 0 %}selected="selected"{%endifequal%}>否</option>
+                <option value="1" {%ifequal result.9 1 %}selected="selected"{%endifequal%}>是</option>
+                {%endifequal%}
+                </select></td> -->
+
+            </tr>
+            <tr>
+                <td colspan="3">
+                    原因：
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                            <textarea name="reason" id="reason{{result.0}}"
+                                      style="width:700px;height:100px;">{{result.6}}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    QA遗漏原因：
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                            <textarea name="ylreason" id="ylreason"
+                                      style="width:700px;height:80px;overflow-y:scroll">{{result.6}}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    改进方案：
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                            <textarea name="gjproject" id="gjproject"
+                                      style="width:700px;height:100px;overflow-y:visible">{{result.6}}</textarea>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="modal-footer">
+        <input type="hidden" name="resultid" id="resultid" value="{{result.0}}">
+
+        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+        <button class="btn btn-primary" type="submit">提交</button>
+    </div>
+</form>
+    </div>
+
+
+
+<!-- <td>是否外网遗漏：<select name="isyl{{result.0}}" id="isyl{{result.0}}">
+{%ifnotequal loginname "X_夏奎"%}
+{%ifequal result.9 0 %}<option value="0">否</option>{%endifequal%}
+{%ifequal result.9 1 %}<option value="1">是</option>{%endifequal%}
+{%endifnotequal%}
+{%ifequal loginname "X_夏奎"%}
+<option value="0" {%ifequal result.9 0 %}selected="selected"{%endifequal%}>否</option>
+<option value="1" {%ifequal result.9 1 %}selected="selected"{%endifequal%}>是</option>
+{%endifequal%}
+</select></td> -->
+
+</tr>
+</body>
+</html>

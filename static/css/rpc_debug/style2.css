@@ -1,0 +1,492 @@
+body{
+    height: 100%;
+    width: 1000px;
+    background: #81deff;
+    text-align: center;
+    min-height: 900px;
+    margin: 0px auto;
+}
+html{background-color: #ffcdcd;}
+#top{
+    height: 80px;
+    width: 1000px;
+    position: fixed;
+    background-color: #493b5a;
+    top: 0;
+    color: #fff;
+    text-align: left;
+    z-index: 10;
+}
+
+._tab{
+    width: 1000px;
+    margin-top: 80px;
+    text-align: left;
+}
+    
+.bot{
+    font-size: 40px;
+    position: absolute;
+    top: 830px;
+}
+
+#btbar{
+    position: relative;
+    top: -368px;
+    display: none;
+    font-size: 20px;
+    left: 520px;
+}
+
+#sendbt{
+    position: relative;
+    top: -24px;
+}
+.bar{
+    font-size: 20px;
+    top: 2px;
+    display: inline-block;
+}
+
+#times{
+
+    width: 30px;
+    background: transparent;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: #000000;
+}
+
+.outleft{
+    padding: 10px 0px 10px 10px;
+    background-color: white;
+    width: 420px;
+    margin: 20px 20px 20px 50px;
+    height: 770px;
+    float: left;
+    
+    border-radius: 15px;
+}
+.left{
+    overflow-y: auto;
+    max-height: 90%
+}
+.clearfloat{
+clear:both; 
+float:none; 
+height:0; 
+overflow:hidden
+
+}
+
+.righttop{
+    background-color: white;
+    width: 430px;
+    margin: 20px 30px 20px 10px;
+    height: 470px;
+    float: right;
+    padding: 10px 0px 10px 10px;
+    border-radius: 15px;
+}
+
+#name{
+    max-width: 70%;
+    word-break: break-all;
+    border-radius: 7px;
+    background-color: #ada7e4;
+    color: #000;
+    display: inline-block;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px black; */
+    height: 20px;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+.rec{max-width: 70%;word-break:break-all;margin: 3px 0 3px 0;border-radius: 0 10px 10px 10px;background-color: #ffcdcd;padding: 8px 8px 12px 8px;line-height: 15px;float: left;cursor: pointer;}
+
+
+.send{float: right;max-width: 70%;word-break:break-all;margin: 3px 0px 3px 0;border-radius: 10px 0 10px 10px;background-color: #8cf5b5;padding: 8px 8px 12px 8px;line-height: 15px;cursor: pointer;color: #000000;}
+
+
+.left_triangle{
+    height: 0px;
+    width: 0px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #ffcdcd #ffcdcd hsla(187, 100%, 42%, 0) rgba(0, 188, 212, 0);
+    position: relative;
+    top: 3px;
+    float: left;
+    left: 4px;
+    }  
+.right_triangle{
+    height: 0px;
+    width: 0px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #8cf5b5 rgba(247, 234, 121, 0) rgba(247, 234, 121, 0) #8cf5b5;
+    position: relative;
+    top: 3px;
+    float: right;
+    margin-right:10px;
+    left: -1px;
+    }
+        
+        
+.json-editor{
+margin-top: 5px;
+height:85%;
+overflow-y: auto;
+margin-left: 0;
+padding: 0; 
+padding-left: 20px;
+
+}
+
+.json-editor .property{
+    max-width: 100px;
+    background-color: #bfbfbf;
+}
+.json-editor .value {
+    background-color: #f9f9f9;
+    max-width: 50%;
+}
+.appender .property{
+    height:0;
+    width:0;
+    display: none;
+
+}
+
+.hvr-reveal:before {
+
+    border-radius: 15px;
+}
+.oh{
+cursor: pointer;
+}
+
+.oh:hover{
+
+color: #F44336;
+
+}
+.row:hover{
+
+background-color: #ececec;
+}
+
+#report{
+    background-color: white;
+    width: 430px;
+    height: 260px;
+    float: right;
+    padding: 10px 0px 10px 10px;
+    position: relative;
+    /* border: solid 1px #aaa; */
+    margin: 8px 30px 20px 0;
+    border-radius: 15px;
+}
+
+.toptab{
+    display: inline-block;
+    color: #000;
+    background-color: rgba(255, 255, 178, 0.35);
+    margin: 0 0 0 20px;
+    padding: 7px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: 45px;
+    /* text-shadow: 1px 1px 1px #607D8B; */
+}
+.toptab:hover{
+
+cursor: pointer;
+
+}
+.ontoptab{
+    background: #81deff;
+    color: #ffffff;
+}
+.hvr-bounce-to-top:before {
+background: #ffffb2;
+border-radius: 10px 10px 0 0;
+}
+
+.hvr-bounce-to-top:hover{
+    color: #ad93d0;
+}
+.lefttab{
+
+    position: absolute;
+    top: 150px;
+    margin: 16px;
+}
+
+#script{
+display:none;
+
+}
+
+
+.leftbt{
+    padding: 10px 5px;
+    background: #dcdcdc;
+    border-radius: 10px 0px 0px 10px;
+    writing-mode: vertical-lr;
+    margin: 10px 0;
+    /* border: solid #6ceaa1 3px; */
+    color:#888;
+}
+.leftbt:hover{
+    cursor: pointer;
+    color:#4CAF50;
+
+}
+.onleftbt{
+    color: #493b5a;
+    background: #fff;
+}
+
+
+#RPClist{
+display:none;
+padding-top: 10px;
+}
+
+
+#Scriptlist{
+
+display:none;
+padding-top: 10px;
+}
+
+#Filtlist{
+display:none;
+padding-top: 10px;
+
+}
+
+#help{
+display:none;
+padding-top: 10px;
+}
+
+
+.rangebt{
+    display: inline-block;
+    /* background-color: #CDDC39; */
+    border-radius: 15px;
+    padding: 2px 4px;
+}
+
+.s_box{
+
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+
+}
+
+.s_box_in{
+    margin: 20% 35%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+}
+#editRange,#editToRPClist,#editSaveScript{
+    display:none;
+
+}
+#retip{
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #ff4f4f;
+    padding: 5px 30px;
+    color: white;
+    border-radius: 15px;
+    display:none;
+}
+
+#keyname{
+    background-color: #ada7e4;
+    border-radius: 7px;
+    margin: 0 40px;
+    padding: 3px;
+    padding-bottom: 6px;
+    color: #000000;
+}
+
+.boxbt{
+    font-size: 20px;
+    display: inline-block;
+    background-color: #ffffb2;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.boxbt:hover{
+font-size: 20px;
+color: #F44336;
+}
+.s_box_in input{
+    height: 20px;
+    font-size: 20px;
+}
+.xbt{
+    color: red;
+    font-size: 30px;
+    top: -39px;
+    left: 191px;
+}
+.mid{
+    padding: 15px;
+    background-color: white;
+    width: 860px;
+    margin: 10px 50px;
+    border-radius: 15px;
+    min-height: 500px;
+
+}
+.inmid{
+
+    overflow-y: scroll;
+    height: 800px;
+
+}
+.x{
+    color: red;
+    display: inline-block;
+}
+.rpclist_name{
+    max-width: 70%;
+    word-break: break-all;
+    border-radius: 7px;
+    background-color: #ada7e4;
+    color: #000000;
+    font-weight: bold;
+    height: 20px;
+    padding: 2px 10px;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+.rpclist_rpc{border-radius: 10px;border: dashed #ad93d0 1px;display:none;}
+.rpclistbar,.rpclistbar div{
+
+    display: inline-block;
+
+}
+.userinfo{
+    position: absolute;
+    right: 5px;
+    top:52px;
+}
+.userinfo:hover #exbt{
+
+    top: 0px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s; /* Firefox 4 */
+    -webkit-transition: all 0.5s; /* Safari 和 Chrome */
+    -o-transition: all 0.5s; /* Opera */
+}
+#username{
+    background-color: #ada7e4;
+    padding: 2px 20px 5px 20px;
+    border-radius: 7px 7px 0 0;
+    z-index: 10000;
+    position: relative;
+}
+#exbt{
+    top: -23px;
+    position: relative;
+    cursor: pointer;
+    background-color: #79c37c;
+    padding: 2px 20px 5px 20px;
+    border-radius: 0 0 7px 7px;
+}
+.title{
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+
+}
+
+#ws_state{
+    color: white;
+    position: absolute;
+    right: 150px;
+    top: 16px;
+}
+#ws_state:hover{
+
+    color: white;
+
+}
+
+#editbt{
+    top: -464px;
+    position: relative;
+    left: 320px;
+}
+
+.onedit{
+    background-color: #ececec;
+    border-bottom: dashed #ada7e4 1px;
+}
+
+.json-editor .item.object > .property{
+background-color: #ffffff;
+border: solid 1px #81deff;
+color: #000;
+}
+.json-editor .item.array  > .property{
+background-color: #ffffff;
+border: solid 1px #81deff;
+color: #000;
+}
+.json-editor .item.string > .property{
+    background-color: #ffffff;
+    border: solid 1px #81deff;
+    color: #000;
+}
+.json-editor .item.number > .property{
+    background-color: #ffffff;
+    border: solid 1px #81deff;
+    color: #000;
+}
+
+.nice-select{
+
+
+color: #250000;
+
+}
+#chart1,#chart2{
+    width: 210px;
+    height: 270px;
+    display: inline-block;
+}
+#chartbt{
+    position: relative;
+    top: -30px;
+    
+    }
