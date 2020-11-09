@@ -4,6 +4,9 @@
     <title>登录界面</title>
 </head>
 <body>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/jisuanji.css' %}" />
+
 <!--        <form method="post" action="/AppJisuan/insertname">-->
 <!--            {% csrf_token  %}   &lt;!&ndash; 防止跨站攻击 &ndash;&gt;-->
 <!--            <input type="text" name="username"> &lt;!&ndash; 后端通过name拿到数据 &ndash;&gt;-->
@@ -11,6 +14,38 @@
 <!--        </form>-->
 <!--        <br/>-->
         <p>{{ username }}</p>
+          <table>
+    <tr>
+    	<td colspan="5" id="show">0</td>
+    </tr>
+    <tr>
+    	<td class="td" id="zero">0</td>
+      <td class="td">.</td>
+      <td id="last"><</td>
+      <td id="clear" colspan="2">c</td>
+    </tr>
+    <tr>
+    	<td class="td">1</td>
+      <td class="td">2</td>
+      <td class="td">3</td>
+      <td class="td">+</td>
+      <td class="td">-</td>
+    </tr>
+    <tr>
+    	<td class="td">4</td>
+      <td class="td">5</td>
+      <td class="td">6</td>
+      <td class="td">*</td>
+      <td class="td">/</td>
+    </tr>
+    <tr>
+    	<td class="td">7</td>
+      <td class="td">8</td>
+      <td class="td">9</td>
+      <td id="ok" colspan="2">=</td>
+    </tr>
+  </table>
+<script type='text/javascript' src="{% static 'js/jisuanji.js' %}"></script>
     </body>
 <!--<iframe src="App2\templates\index2.html" scrolling="yes">-->
 </html>

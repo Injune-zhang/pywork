@@ -1,0 +1,6 @@
+table,tr,td{
+  border:1px solid blue;
+}
+#ok,.td,#clear,#last{
+  text-align:center;
+}
